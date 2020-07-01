@@ -80,7 +80,7 @@ $(document).ready(function () {
 
 						var orderJSON = {
 							"external_reference": external_reference,
-							"notification_url": "http://gruposim-mp-examen-qr-vendedor.herokuapp.com/api/notifications",
+							"notification_url": "http://gruposim-mp-examen-qr-vendedor.herokuapp.com/api/notifications/",
 							"items": items
 						};
 

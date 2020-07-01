@@ -26,13 +26,6 @@ $n=0;
 if(isset($notification['resource'])){$resource = $notification['resource'];$n=$n+1;}else{$resource= "";}
 if(isset($notification['topic'])){$topic =$notification['topic'];$n=$n+1;}else{$topic ="";}
 
-$fp = fopen('notifications.txt', 'a');
-fwrite($fp, $notification);
-fclose($fp);
-
-date_default_timezone_set("America/Argentina/Buenos_Aires");
-file_put_contents('./log_' . date("Ynj") . '.log', $notification, FILE_APPEND);
-
 if($n==2){
 	// ***********************************************
 	// GUARDAR LOS LA NOTIFICACIÓN EN ARCHIVO DE TEXTO
@@ -46,7 +39,7 @@ if($n==2){
 	// seguramente deberás dar derechos al archivo notifications.txt
 	// Por ejemplo con el comando: "sudo chmod 777 notifications.txt"
 
-	$fp = fopen('notifications.txt', 'a');
+	$fp = fopen('notifications.txt', 'w');
 	fwrite($fp, $resource);
 	fclose($fp);
 
