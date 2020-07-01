@@ -26,6 +26,10 @@ $n=0;
 if(isset($notification['resource'])){$resource = $notification['resource'];$n=$n+1;}else{$resource= "";}
 if(isset($notification['topic'])){$topic =$notification['topic'];$n=$n+1;}else{$topic ="";}
 
+$fp = fopen('notifications.txt', 'a');
+fwrite($fp, $notification);
+fclose($fp);
+
 date_default_timezone_set("America/Argentina/Buenos_Aires");
 file_put_contents('./log_' . date("Ynj") . '.log', $notification, FILE_APPEND);
 
