@@ -1,6 +1,6 @@
 <?php
 
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 header('Content-type: application/json');
 include_once '../global/functions.php';
 global $access_token,$collector_id,$notificationJSON;
@@ -26,11 +26,6 @@ $n=0;
 if(isset($notification['resource'])){$resource = $notification['resource'];$n=$n+1;}else{$resource= "";}
 if(isset($notification['topic'])){$topic =$notification['topic'];$n=$n+1;}else{$topic ="";}
 
-$fp = fopen('notifications.txt', 'w');
-fwrite($fp, $notification);
-fclose($fp);
-
-
 if($n==2){
 	// ***********************************************
 	// GUARDAR LOS LA NOTIFICACIÓN EN ARCHIVO DE TEXTO
@@ -44,7 +39,7 @@ if($n==2){
 	// seguramente deberás dar derechos al archivo notifications.txt
 	// Por ejemplo con el comando: "sudo chmod 777 notifications.txt"
 
-	$fp = fopen('notifications.txt', 'w');
+	$fp = fopen('notifications.txt', 'a');
 	fwrite($fp, $resource);
 	fclose($fp);
 
