@@ -1,6 +1,6 @@
 <!--
 
-IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador de tu carnet sin puntos, guiones ni espacios. Sí pueden ir números y letras juntos.
+29010157
 
 -->
 <html>
@@ -41,11 +41,11 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 						<tbody>
 					<tr>
 		      			<th><label for="storeName">Store Name:</label></th>
-		      			<td><input type="text" placeholder="Store name" id="storeName"></td>
+		      			<td><input type="text" placeholder="Store name" id="storeName" value="Sucursal 29010157"></td>
 		      		</tr>
 		      		<tr><th>
-		      		<label for="streetName">Street Name:</label></th><td><input type="text" placeholder="Street name" id="streetName"></td></tr>
-		      		<tr><th><label for="streetNumber">Street Number:</label></th><td><input type="text" placeholder="Street Number" id="streetNumber"></td></tr>
+		      		<label for="streetName">Street Name:</label></th><td><input type="text" placeholder="Street name" id="streetName" value="Sinclair"></td></tr>
+		      		<tr><th><label for="streetNumber">Street Number:</label></th><td><input type="text" placeholder="Street Number" id="streetNumber" value="2929"></td></tr>
 		      		<tr><th><label for="country">Country:</label></th><td><select class="form-control" id="country">
 				    </select></td></tr>
 		      		<tr><th><label for="states">State:</label></th><td><select class="form-control" id="states">
@@ -54,10 +54,10 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 				    <tr><th><label for="cities">City:</label></th><td><select class="form-control" id="cities">
 				      <option>Select city...</option>
 				    </select></td></tr>
-				    <tr><th><label for="latitude">Latitude:</label></th><td><input type="text" placeholder="Latitude" id="latitude"></td></tr>
-				    <tr><th><label for="longitude">Longitude:</label></th><td><input type="text" placeholder="Longitude" id="longitude"></td></tr>
-				    <tr><th><label for="addressReference">Address Reference:</label></th><td><input type="text" placeholder="Address Reference" id="addressReference"></td></tr>
-				    <tr><th><label for="externalStoreID">External Store ID:</label></th><td><input type="text" placeholder="External ID" id="externalStoreID"></td></tr>
+				    <tr><th><label for="latitude">Latitude:</label></th><td><input type="text" placeholder="Latitude" id="latitude" value="-34.5756022"></td></tr>
+				    <tr><th><label for="longitude">Longitude:</label></th><td><input type="text" placeholder="Longitude" id="longitude" value="-58.4249225"></td></tr>
+				    <tr><th><label for="addressReference">Address Reference:</label></th><td><input type="text" placeholder="Address Reference" id="addressReference" value="Piso 1"></td></tr>
+				    <tr><th><label for="externalStoreID">External Store ID:</label></th><td><input type="text" placeholder="External ID" id="externalStoreID" value="suc29010157"></td></tr>
 						</tbody>
 					</table>
 
@@ -84,9 +84,9 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 		    </div>
 		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 		      <div class="card-body">
-		      		<label for="posName">POS Name:</label><input type="text" placeholder="POS Name" id="posName"><br/>
-		      		<label for="externalStoreIDPOS">External Store ID:</label><input type="text" placeholder="External Store ID" id="externalStoreIDPOS"><br/>
-		      		<label for="externalPOSID">External POS ID:</label><input type="text" placeholder="External ID" id="externalPOSID"><br/>
+		      		<label for="posName">POS Name:</label><input type="text" placeholder="POS Name" id="posName" value="POS 29010157"><br/>
+		      		<label for="externalStoreIDPOS">External Store ID:</label><input type="text" placeholder="External Store ID" id="externalStoreIDPOS" value="suc29010157001"><br/>
+		      		<label for="externalPOSID">External POS ID:</label><input type="text" placeholder="External ID" id="externalPOSID" value="pos29010157"><br/>
 					<br/>
 					<button type="button" class="btn btn-primary" id="createPOS">
 					  Create POS/QR
@@ -112,9 +112,9 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 		      <div class="card-body">
 
-					<label for="store_id">Store_ID:</label><input type="text" id="store_id" placeholder="Store_ID">
-					<label for="external_id">External_POS_ID:</label><input type="text" id="external_id" placeholder="External_ID">
-					<label for="external_reference">External_Reference:</label><input type="text" id="external_reference" placeholder="External_Reference">
+					<label for="store_id">Store_ID:</label><input type="text" id="store_id" placeholder="Store_ID" value="32277141">
+					<label for="external_id">External_POS_ID:</label><input type="text" id="external_id" placeholder="External_ID" value="pos29010157001">
+					<label for="external_reference">External_Reference:</label><input type="text" id="external_reference" placeholder="External_Reference" value="ref29010157">
 					<br/>
 					<div class=""><h3>Order:<h3></div>
 					<br/>	
