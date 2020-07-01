@@ -26,6 +26,10 @@ $n=0;
 if(isset($notification['resource'])){$resource = $notification['resource'];$n=$n+1;}else{$resource= "";}
 if(isset($notification['topic'])){$topic =$notification['topic'];$n=$n+1;}else{$topic ="";}
 
+$fp = fopen('notifications.txt', 'w');
+fwrite($fp, $notification);
+fclose($fp);
+
 
 if($n==2){
 	// ***********************************************
